@@ -1,13 +1,21 @@
 
 package cuentas;
 
+/**
+ * Esta clase evalua si el dinero que sacamos es inferior al saldo en cuenta 
+ * @author Tomás Jesus Alvarez Torres 
+ * @version 10/02/2021
+ * @see <a href="https://github.com/Ttomyy/tarea04>github.com</a>
+ *
+ */
 public class CCuenta {
 
 	private String nombre;
 	private String cuenta;
 	private double saldo;
 	private double tipoInterès;
-
+	/**metodos constructores  
+	 * */
 	public CCuenta() {
 	}
 
@@ -20,7 +28,10 @@ public class CCuenta {
 	public double estado() {
 		return getSaldo();
 	}
-
+/**
+ * evalua que no pueda sacar una cantidad negativa
+ * @param cantidad 
+ *  */
 	public void ingresar(double cantidad) throws Exception {
 		if (cantidad < 0)
 			throw new Exception("No se puede ingresar una cantidad negativa");
