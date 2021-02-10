@@ -26,5 +26,7 @@ public class Main {
 			System.out.print("Fallo al ingresar");
 		}
 		System.out.println("Fin de programa ");//vamos a probar un commit con este comentario
+		System.out.println("2 comit ");//vamos a probar un segundo commit con este comentario
+
 	}
 }
